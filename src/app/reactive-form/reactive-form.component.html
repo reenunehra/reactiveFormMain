@@ -1,0 +1,94 @@
+<div style="float: left; width:50%;">
+ 
+    <form [formGroup]="userForm" (ngSubmit)="submitForm(userForm)">
+     
+      <p>
+        <label for="username">UserName </label>
+        <input type="text" id="username" name="username" formControlName="username">
+      </p>
+     
+      <p>
+        <label for="email">Email </label>
+        <input type="text" id="email" name="email" formControlName="email">
+      </p>   
+     
+      <p>
+        <label for="contact">Contact </label>
+        <input type="text" id="contact" name="contact" formControlName="contact">
+      </p>     
+     
+      <p>
+        <label for="status"> Status </label>
+        <input type="radio" value="true" id="status" name="status" formControlName="status"> True
+        <input type="radio" value="false" id="status" name="status" formControlName="status"> False
+      </p>  
+
+      <p>
+        <label for="password"> Password </label>
+        <input type="text" id="password" name="password" formControlName="password">
+      </p>
+
+      <p>
+        <label for="dateCreated"> DateCreated </label>
+        <input type="text" id="dateCreated" name="dateCreated" formControlName="dateCreated">
+      </p>
+      
+      <p>
+        <label for="dateModified">DateModified </label>
+        <input type="text" id="dateModified" name="dateModified" formControlName="DateModified">
+      </p>
+
+      <p>
+        <label for="userId">UserId </label>
+        <input type="text" id="userId" name="userId" formControlName="userId">
+      </p>
+     
+      <p>
+        <label for="pincode">PinCode </label>
+        <input type="text" id="pincode" name="pincode" formControlName="pincode">
+      </p>
+
+      <p>
+        <label for="id">ID </label>
+        <input type="text" id="id" name="id" formControlName="id">
+      </p>
+
+      <p>
+        <label for="description">Description </label>
+        <input type="text" id="description" name="description" formControlName="description">
+      </p>
+
+      <p>
+        <label for="taskStatus"> Status </label>
+        <input type="radio" value="true" id="taskStatus" name="taskStatus" formControlName="taskStatus"> True
+        <input type="radio" value="false" id="taskStatus" name="taskStatus" formControlName="taskStatus"> False
+      </p>
+
+      <p>
+        <label for="taskcreatedDate">TaskCreatedDate </label>
+        <input type="text" id="taskcreatedDate" name="taskcreatedDate" formControlName="taskcreatedDate">
+      </p>
+
+
+
+      <p>
+        <label for="datecreated">DateCreated </label>
+        <input type="text" id="datecreated" name="datecreated" formControlName="datecreated">
+      </p>
+
+      <p>
+        <label for="datemodified">DateModified </label>
+        <input type="text" id="datemodified" name="datemodified" formControlName="datemodified">
+      </p>
+     
+
+      <p>
+        <button type="submit"  [disabled]="!userForm.valid">Submit</button>
+      </p>
+
+      <button type="button"  (click)="ResetForm(userForm)" [disabled]="!userForm.valid">Reset</button>
+
+     
+    </form>
+     
+    </div>
